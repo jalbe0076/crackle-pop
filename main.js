@@ -1,10 +1,13 @@
-const cracklePop = () => {
-  for (let i = 1; i <= 100; i++) {
-    if (!(i % 3) && !(i % 5)) {
+const cracklePop = (limit) => {
+  for (let i = 1; i <= limit; i++) {
+    const divisibleBy3 = i % 3 === 0;
+    const divisibleBy5 = i % 5 === 0;
+
+    if (divisibleBy3 && divisibleBy5) {
       console.log('CracklePop')
-    } else if (!(i % 3)) {
+    } else if (divisibleBy3) {
       console.log('Crackle')
-    } else if(!(i % 5)) {
+    } else if(divisibleBy5) {
       console.log('Pop')
     } else {
       console.log(i)
@@ -12,4 +15,4 @@ const cracklePop = () => {
   }
 }
 
-cracklePop();
+cracklePop(100);
