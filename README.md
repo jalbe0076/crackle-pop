@@ -14,4 +14,4 @@ This program demonstrates basic programming concepts such as conditionals and lo
 1. Clone the repository to your local machine
 2. Navigate into the project directory `cd crackle-pop`
 3. Run the program to display the printed results, run `node main.js` ([node.js](https://nodejs.org/en) must be installed in your computer)
-4. Open `mail.js`to view the code in an editor of yoru choice
+4. Open `main.js`to view the code in an editor of yoru choice
